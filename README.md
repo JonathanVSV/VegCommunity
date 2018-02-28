@@ -1,32 +1,6 @@
-# vegetatsion
-vegetation analysis
+# VegCommunity
 
-This series of scripts make several vegetation analysis based on a sampling vegetation database and can obtain results for different strata (trees, shrubs and low). Currently all the names and descriptions are in Spanish. Was one of my first projects so it needs several adjustments and functions might not be the fastest :). Vegetation database need to have determined names so the scripts can work correctly.
+This project is a simple function that is aimed at helping non-R-coder biologists to calculate basic plant community attributes such as Basal area, crown cover, mean height, species richness and Simpson's and Shannon's diversity indices per sampling plot. Th only detail is that the data has to be inserted in a specific format so the function can work properly.
 
-The scripts are chained so the proper order to use them should be:
-1. veg_an
-2. Dend
-3. SP
-4. descripcion
-5. sitios
+Este proyecto consta de una simple función que pretende ayudar a los biólogos que no saben programar en R para calcular medidas básicas a nivel de comunidad como área basal, cobertura de copa, altura media, riqueza de especies y dos índices de diversidad (Shannon y Simpson) por parcela. El único detalle es que hay que preparar la base de datos para poder hacer estos cálculos.
 
-veg_an
-
-Does an analysis for each site, each species, and each species and site (combined). Obtains attributes as density, basal area, coverage and relative importance value (RIV).
-
-Dend
-
-Obtains a dendrogram to associate the sampling plots according to the their species composition and associated RIV.
-Needs a .csv with the names of each group to inser it in the plot of the dendrogram
-
-SP 
-
-Does species accumulation curve
-
-Descripcion
-
-Species and Families count
-
-Sitios
-
-Makes a short description of the characteristics of the sampling sites, according to their altitude, orientation, slope.
