@@ -6,7 +6,7 @@ Este proyecto consta de una simple función que pretende ayudar a los biólogos 
 ## Uso de función
 
 ### Instalar R
-Ir a https://cran.r-project.org/
+Ir a [CRAN](https://cran.r-project.org/)
 Instalar la versión de R más reciente
 
 ### Dentro de R
