@@ -12,10 +12,10 @@ El único detalle es que hay que preparar la base de datos para poder hacer esto
   * Especie.
   
 Consultar el archivo ejemplo.csv para un ejemplo.
-[ejemplo.csv](https://github.com/JonathanVSV/VegCommunity/blob/master/Ejemplo.csv)
+[ejemplo.csv](Ejemplo.csv)
 
 Además se puede consultar un ejemplo de como cargar la función y correr la rutina: 
-[ejemplo.R](https://github.com/JonathanVSV/VegCommunity/blob/master/Example.R)
+[ejemplo.R](Example.R)
 
 ## English
 This project is a simple function that is aimed at helping non-R-coder biologists to calculate basic plant community attributes such as Basal area, crown cover, mean height, species richness per sampling plot. Th only detail is that the data has to be inserted in a specific format so the function can work properly.
