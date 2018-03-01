@@ -98,7 +98,7 @@ veg_community<-function(radio,parcela,DAP_ini,DAP_fin)
 	    
 	  }
 	  
-	  export_arch<-paste0("Resumen por Sitio",".csv")
+	  export_arch<-paste0("Atributos_Sitio",".csv")
 	  write.csv(resul.sit,export_arch,row.names=F)
 	  print(paste0("Listo por Sitios "))
 	  
@@ -203,7 +203,7 @@ veg_community<-function(radio,parcela,DAP_ini,DAP_fin)
 	  
 	  FIN<-cbind(Sitio,ultimate)
 	  
-	  export_arch2<-paste0("Resumen por Especie y Sitio",".csv")
+	  export_arch2<-paste0("Atributos_Especie_Sitio",".csv")
 	  
 	  write.csv(FIN,export_arch2,row.names=F)
 	  print(paste0("Listo por Especie y Sitios "))
@@ -288,7 +288,7 @@ veg_community<-function(radio,parcela,DAP_ini,DAP_fin)
 	  resul.arbol<-resul.arbol[order(resul.arbol[,17],decreasing=T),]
 	  
 	  
-	 export_arch3<-paste0("Resumen por Especie",".csv")
+	 export_arch3<-paste0("Atributos_Especie",".csv")
 	  
 	  
 	  write.csv(resul.arbol,export_arch3,row.names=F)
