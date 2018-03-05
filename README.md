@@ -35,11 +35,11 @@ setwd("directorio local") #p.ej. "C:/users/documents/folder"
 
 ### Preparación de datos
 El único detalle es que hay que preparar la base de datos para poder hacer estos cálculos. Los nombres de la base de datos deben de contener los siguientes campos como nombres de las columnas:
-  * Sitio.
-  * DAP1, DAP2 ... hasta DAPn.
-  * Cobertura.
-  * Altura.
-  * Especie.
+  * Sitio
+  * DAP1, DAP2 ... hasta DAPn
+  * Cobertura
+  * Altura
+  * Especie
   
 Consultar el archivo ejemplo.csv para un ejemplo.
 [ejemplo.csv](Ejemplo.csv)
