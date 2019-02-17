@@ -242,7 +242,7 @@ veg_community(datos_prep,radio=10,circular=T)
 This means that circular plot where used and these, had a ratius of 10 m.
 Once the function has finished, go to the working directory and look for the generated files. 
 
-¡Done!
+Done!
 
 Final files should be equal to the following:
 
