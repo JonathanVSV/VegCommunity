@@ -1,7 +1,7 @@
 # VegCommunity
 
 ## Español
-Este proyecto consta de una simple función que pretende ayudar a los biólogos que no saben programar en R para calcular medidas básicas a nivel de comunidad como área basal, cobertura de copa, altura media, riqueza y diversidad de especies por parcela. 
+Este proyecto consta de una simple función que pretende ayudar a los biólogos que no saben programar en R para calcular medidas básicas de comunidad de plantas como: área basal, cobertura de copa, altura media, riqueza y diversidad de especies y valor de importancia relativa. 
 
 ## Uso de función
 
