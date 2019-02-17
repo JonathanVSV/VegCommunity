@@ -1,0 +1,11 @@
+Package: VegCommunity
+Type: Package
+Title: Calculates some basic plant community attribute
+Version: 0.1.0
+Author: Jonathan V. Solórzano [aut,cre]
+Maintainer: Jonathan V. Solórzano <jonathanvsv@gmail.com>
+Description: This package helps to calculate some basic plant community
+        descriptors such as structural or diversity attributes.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
