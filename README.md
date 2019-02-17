@@ -121,7 +121,9 @@ Ya que haya corrido la función ir al directorio de trabajo a buscar los archivo
 Los archivos finales deberían quedar así con los datos del Ejemplo:
 
 [Atributos por especie.csv](Atributos_Especie.csv)
+
 [Atributos por especie y sitio.csv](Atributos_Especie_Sitio.csv)
+
 [Atributos por sitio.csv](Atributos_Sitio.csv)
 
 ## English
@@ -245,5 +247,7 @@ Once the function has finished, go to the working directory and look for the gen
 Final files should be equal to the following:
 
 [Attributes per species.csv](Atributos_Especie.csv)
+
 [Attributes per species and site.csv](Atributos_Especie_Sitio.csv)
+
 [Attributes per site.csv](Atributos_Sitio.csv)
