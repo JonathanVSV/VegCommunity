@@ -70,7 +70,7 @@ número de columna donde comienza la información de DAP_ini: 6.
 número de columna con la cobertura de copas: 7.
 
 ```
-datos<-veg_preparar(datos,sitio=1,especie=2,altura=3,DAP_ini=4,DAP_fin=6,cobertura=7)
+datos_prep<-veg_preparar(datos,sitio=1,especie=2,altura=3,DAP_ini=4,DAP_fin=6,cobertura=7)
 ```
 
 En caso de que alguna de las variables antes mencionadas no sea haya medido se puede poner una F (de FALSE) para indicar que no se midió esa variable. Por ejemplo, si no se midió cobertura quedaría así: 
