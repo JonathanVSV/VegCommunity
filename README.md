@@ -1,6 +1,6 @@
 # VegCommunity
 
-##English version see bottom section
+English version see bottom section
 
 ## Español
 Este proyecto consta de dos simples funciones que pretenden ayudar a los biólogos que no saben programar en R para calcular medidas básicas a nivel de comunidad como área basal, cobertura de copa, altura media, riqueza y diversidad de especies por parcela. 
@@ -18,6 +18,25 @@ En la pantalla que aparece al abrir R (consola) escribir:
 install.packages("vegan")
 ```
 Escoger cualquier ubicación (de preferencia cerca) para instalar el paquete.
+
+Luego instalar el paquete devtools
+
+```
+install.packages("devtools")
+```
+
+Cargar el paquete devtools e instalar el paquete
+
+```
+library("devtools")
+install_github("JonathanVSV/VegCommunity")
+```
+
+Una vez descargado el paquete, cargarlo en el espacio de trabajo
+
+```
+library(VegCommunity)
+```
 
 Una vez instalado:
 Irse a Archivo -> Nuevo documento.
@@ -121,6 +140,25 @@ In the first screen that appears (console) type:
 install.packages("vegan")
 ```
 Choose any location (it is better to choose close locations) and install the package.
+
+Install devtools package
+
+```
+install.packages("devtools")
+```
+
+Load de package devtools and install VegCommunity package
+
+```
+library("devtools")
+install_github("JonathanVSV/VegCommunity")
+```
+
+Once the package is downloadad load it in the workspace 
+
+```
+library(VegCommunity)
+```
 
 Once it is installed:
 Go to File -> New document.
