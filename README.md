@@ -10,16 +10,33 @@ Ir a [CRAN](https://cran.r-project.org/)
 Instalar la versión de R más reciente
 
 ### Dentro de R
-En la pantalla que aparece al abrir R (consola) escribir:
+En la pantalla que aparece al abrir R (consola).
+Dentro de la consola vamos a escribir los comandos para instalar dos paquetes: vegan y devtools
+Primero se instala vegan escribiendo el siguiente comando en la consola:
 
 ```
 install.packages("vegan")
 ```
 Escoger cualquier ubicación (de preferencia cerca) para instalar el paquete.
 
-Una vez instalado:
-Irse a Archivo -> Nuevo documento.
-Toda la siguiente sección se escribe en el nuevo documento.
+A continuación, instalar el paquete devtools, mediante el siguiente comando:
+```
+install.packages("devtools")
+```
+
+Una vez instalado devtools, se descarga el paquete de VegCommunity:
+```
+devtools::install_github("JonathanVSV/VegCommunity")
+```
+
+Ya que se descargó el paquete, entonces se cargan en el espacio de trabajo los paquetes vegan y VegCommunity
+```
+library(vegan)
+library(VegCommunity)
+```
+
+En R irse a Archivo -> Nuevo documento.
+Toda la siguiente sección se escribe en el nuevo documento y se corre cada linea de comando con ctrl + R o ctrl + Enter.
 
 A continuación hay que definir el espacio de trabajo, es decir, la carpeta donde se van a leer y escribir los archivos por default.
 Revisar que la ruta esté bien escrita y en lugar de utilizar \ (símbolo utilizado por default en windows), sustituirlos por /
