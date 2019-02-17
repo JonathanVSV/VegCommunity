@@ -30,7 +30,7 @@ setwd("directorio local") #p.ej. "C:/users/documents/folder"
 
 ### Importación de datos
 Para ejemplificar, se añadió un archivo de ejemplo de una base de datos.
-[ejemplo.csv](Ejemplo.csv)
+[ejemplo.csv](Ejemplo.csv). 
 Primero, hay que leer el archivo con los datos (previamente guardado desde excel como .csv o delimitado por comas) de la siguiente manera:
 
 ```
@@ -42,9 +42,9 @@ Esto importa nuestros datos al objeto "datos" en el entorno de R
 ### Preparación de datos
 Para preparar los datos el paquete cuenta con la función: veg_preparar
 
-Se ejemplifica cómo se llama esa función con la base de Ejemplo.csv
+Se ejemplifica cómo se llama esa función con la base de Ejemplo.csv. 
 Hay que utilizar la función veg_preparar() de la siguiente forma:
-nombre del objeto donde se importaron los datos: datos.
+nombre del objeto donde se importaron los datos: en este caso se nombró datos.
 número de columna con el número o nombre de sitios: 1.
 número de columna con el nombre de especies: 2.
 número de columna con la altura: 3.
