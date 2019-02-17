@@ -82,10 +82,11 @@ Ya que haya corrido la función ir al directorio de trabajo a buscar los archivo
 Los archivos finales deberían quedar así con los datos del Ejemplo:
 
 [Atributos por especie.csv](Atributos_Especie.csv)
+
 [Atributos por especie y sitio.csv](Atributos_Especie_Sitio.csv)
+
 [Atributos por sitio.csv](Atributos_Sitio.csv)
 
 ## English
-This project is a simple function that is aimed at helping non-R-coder biologists to calculate basic plant community attributes such as Basal area, crown cover, mean height, species richness per sampling plot. Th only detail is that the data has to be inserted in a specific format so the function can work properly.
-
+This project is a simple function that is aimed at helping non-R-coder biologists to calculate basic plant community attributes such as Basal area, crown cover, mean height, species richness and diversity indices per sampling plot.
 (under construction)
