@@ -4,28 +4,31 @@
 #' @description ENG This function prepares data to be passed on to veg_community
 #'        SPA Esta función prepara los datos para ser pasados a veg_community
 #'
-#' @param datos=datos ENG Object where the data is stored must come from read.csv(...)
+#' @param datos=datos data.frame. ENG Object where the data is stored must come from read.csv(...)
 #'        SPA objeto donde se tienen guardados los datos, debe venir de un objeto creado mediante:
 #'        read.csv(...)
 #'
-#' @param sitio=number ENG Number of column where the plot code or site name is stored
+#' @param sitio=number numeric. ENG Number of column where the plot code or site name is stored
 #' SPA Número de la columna donde se encuentra la información de nombre de cada unidad de muestreo o sitio
 #'
-#' @param especie=number ENG number of column species information, put F if no species data was acquired
+#' @param especie=number numeric. ENG number of column species information, put F if no species data was acquired
 #' SPA Número de columna con la información de las especies, poner F si no se registró esa información
 #'
-#' @param altura=number ENG number of column with height information, F if this information was not acquired
+#' @param altura=number numeric. ENG number of column with height information, F if this information was not acquired
 #' SPA número de columna con la información de altura, F si o se registró esta información
 #'
-#' @param DAP_ini=number ENG number of column that starts with DBH information, F if this information was not acquired
+#' @param DAP_ini=number numeric. ENG number of column that starts with DBH information, F if this information was not acquired
 #' SPA número de columna en la que empieza la información de DAP, F si o se registró esta información
 #'
-#' @param DAP_fin=number ENG number of column that ends with DBH information, F if this information was not acquired
+#' @param DAP_fin=number numeric. ENG number of column that ends with DBH information, F if this information was not acquired
 #' Remember to put DBH info in cm!
 #' SPA número de columna en la que termina la información de DAP, F si o se registró esta información
 #' Recuerda de poner los valores de DAP en cm
-#' @param cobertura=number ENG number of column with crown cover information, F if this information was not acquired
+#' @param cobertura=number numeric. ENG number of column with crown cover information, F if this information was not acquired
 #' SPA número de columna en la que empieza la información de cobertura, F si o se registró esta información
+#'
+#' @return ENG when a data.frame is imported, veg_preparar will return the same data.frame, but with its headers with different
+#' names. SPA cuando se importa un data.frame veg_preparar regresa el mismo data.frame, pero con otros nombres de columna.
 #'
 #' @keywords ENG analysis, vegetation; SPA análisis, vegetación
 #'

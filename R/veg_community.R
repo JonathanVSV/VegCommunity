@@ -1,5 +1,5 @@
-#' @title ENG Calculates structural and diversity attributes of a plant community
-#'        SPA Calcula atributos estructurales y de diversidad de una comunidad vegetal
+#' @title ENG Calculates structural and diversity attributes of the plant community of each sampling plot
+#'        SPA Calcula atributos estructurales y de diversidad de la comunidad vegetal de cada unidad de muestreo
 #'
 #' @description ENG This function calculates several attributes of a vegetation community, it
 #' calculates structural characteristics per plot, per species and per species and plot. Import
@@ -8,29 +8,29 @@
 #' características estructurales por sitio, por especie y por especie y sitio.importar datos
 #' con encoding utf-8, stringsAsFactors=F
 #'
-#' @param datos=datos ENG Object where the PREPARED data is stored must come from veg_preparar(...)
+#' @param datos=datos data.frame. ENG Object where the PREPARED data is stored must come from veg_preparar(...)
 #'        SPA objeto donde se tienen guardados los datos PREPARADOS, debe venir de un objeto creado mediante:
 #'        veg_preparar(...)
 #'
-#' @param radio=radio ENG ratius in meters of the circle or equivalent side of a square plot, e.g. 0.5,3,5
+#' @param radio=radio numeric. ENG ratius in meters of the circle or equivalent side of a square plot, e.g. 0.5,3,5
 #' Equivalent side stands for example, for rectangular plots with 5 x 2 m = 10 m2 can be expressed as a square
 #' plot with a square plot with a side = 3.162277660168379 m.
 #' SPA radio en m del círculo o lado equivalente del cuadrado de muestreo, p.ej. 0.5,3,5.
 #' El lado equivalente se refiere a, por ejemplo, se tienen rectangulos de  muestreo de 5 x 2 m = 10m2, puede
 #' expresarse como un cuadrado de muestreo de lado =  3.162277660168379 m.
 #'
-#' @param circular=T ENG If the plot is circular or not. If true, then data is taken a the ratius of a circular
+#' @param circular=T Boolean. ENG If the plot is circular or not. If true, then data is taken a the ratius of a circular
 #' plot, else, i.e., False, it is taken as a side of a squared plot.
 #' SPA si se trata de una unidad de muestreo circular o cuadrada, circular, TRUE, el radio se da tal cual,
 #' en cambio en cuadrada, FALSE, se da la raíz del área total de muestreo.
 #'
 #' @keywords ENG analysis, vegetation; SPA análisis, vegetación
 #'
-#' @examples veg_community("db.csv",5,")
+#' @examples veg_community("datos_preparados.csv",5,T)
 #'
 #' @export veg_community
 
-veg_community<-function(datos_preparados,radio,circular=T)
+veg_community<-function(datos,radio,circular=T)
   {
     if(nrow(datos)==0)
 	  {
@@ -121,15 +121,14 @@ veg_community<-function(datos_preparados,radio,circular=T)
 	    {
 	      entrx<-which(row.names(abundan)==subDatos[h,1])
 	      entry<-which(colnames(abundan)==subDatos[h,2])
-	      abundan[entrx,entry]<-sum(subDatos[h,3],abundan[entrx,entry])
+	      abundan[entrx,entry]<-sum(1,abundan[entrx,entry])
 	    }
 
 	    #Diversidad por sitio
-	    extra<-abundan[i,which(abundan[i,]>=1)]
-	    resul.sit[k,2]<-vegan::specnumber(extra)
-	    resul.sit[k,3]<-vegan::diversity(extra, index="simpson")
-	    resul.sit[k,4]<-vegan::diversity(extra, index="shannon")
-	    resul.sit[k,5]<-vegan::diversity(extra, index="invsimpson")
+	    resul.sit[k,2]<-vegan::specnumber(abundan)
+	    resul.sit[k,3]<-vegan::diversity(abundan, index="simpson")
+	    resul.sit[k,4]<-vegan::diversity(abundan, index="shannon")
+	    resul.sit[k,5]<-vegan::diversity(abundan, index="invsimpson")
 
 	    #Abundancia
 	    resul.sit[k,6]<-abun.sit[k]
